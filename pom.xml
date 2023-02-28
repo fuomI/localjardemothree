@@ -17,7 +17,23 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+	
+	<repositories>
+	     <repository>
+	         <!-- DO NOT set id to "local" because it is reserved by Maven -->
+	         <id>lib</id>
+	         <url>file://${project.basedir}/lib</url>
+	     </repository>
+	  </repositories>
+	
 	<dependencies>
+		
+		<dependency>
+	        <groupId>jonij</groupId>
+	        <artifactId>JarDemo</artifactId>
+	        <version>1</version>
+	    </dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
